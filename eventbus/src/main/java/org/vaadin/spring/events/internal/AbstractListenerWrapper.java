@@ -34,7 +34,7 @@ abstract class AbstractListenerWrapper implements ListenerCollection.Listener {
 
     private final EventBus owningEventBus;
 
-    private final Object listenerTarget;
+    private transient final Object listenerTarget;
 
     private final boolean includingPropagatingEvents;
 
